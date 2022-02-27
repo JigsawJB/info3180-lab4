@@ -44,7 +44,7 @@ def upload():
         flash('File Saved', 'success')
         return redirect(url_for('home'))
 
-    return render_template('upload.html')
+    return render_template('upload.html', form=photoform)
 
 
 @app.route('/login', methods=['POST', 'GET'])
